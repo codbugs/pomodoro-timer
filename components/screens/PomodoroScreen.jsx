@@ -17,7 +17,7 @@ export default function PomodoroScreen({ task, onCancel, onPomodoroEnd, onChange
       <Content>
         <Center>
           <Text>
-            You will start the count of <div className="emphasis">{ formatMinutes(task.time) }</div> minutes to be focused on the task <div className="emphasis">{ task.title }</div> and avoid any other distraction that does not allow you to attend. Approaching the end, you will receive a message advising you of the completion of the Pomodoro to restart another period or select another task.
+            You will start the count of <div className="emphasis">{ formatMinutes(task.time) }</div> minutes to be focused on the task <div className="emphasis">{ task.title }</div> and avoid any other distraction that does not allow you to attend. Approaching the end, you will receive a message advising you of the completion of the Pomodoro to restart another period or select another task if you are in desktop mode.
           </Text>
           <Timer time={ isRunning ? time : task.time } isRunning={ isRunning } />
         </Center>
