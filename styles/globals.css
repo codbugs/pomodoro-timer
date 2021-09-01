@@ -1,63 +1,306 @@
+/* ../../../../../JAIMEL~1.LOP/AppData/Local/Temp/tmp-15652-7gsq5Xu97A8F/pomodoro-timer-styles/_reset.css */
 * {
+  background-color: inherit;
+  border: 0;
+  border-radius: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   letter-spacing: 1.25px;
   line-height: 150%;
   margin: 0;
   padding: 0;
 }
 
-.actions {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 0;
-}
-
+/* ../../../../../JAIMEL~1.LOP/AppData/Local/Temp/tmp-15652-7gsq5Xu97A8F/pomodoro-timer-styles/actions.css */
 .button {
-  border: 0;
+  border: solid 1px #FA7D09;
   border-radius: 5px;
-  padding: 8px 30px;
+  color: #FA7D09;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  outline: none;
+  padding: 5px 25px;
+  text-transform: uppercase;
+  min-width: 150px;
 }
-
-.button.start {
-  background-color: #66DE93;
+.button:hover {
+  font-weight: 700;
 }
-
-.button.stop {
-  background-color: #D83A56;
+.button.primary {
+  background-color: #FA7D09;
+  color: white;
 }
-
-.button.unavailable {
-  display: none;
+.button.link {
+  border: 0;
+  background: inherit;
+  color: #4A3F35;
+  text-transform: inherit;
+  min-width: inherit;
+  margin: 0;
+  padding: 0;
 }
-
-.section {
+.button.link:hover {
+  font-weight: bolder;
+}
+.button.link.primary {
+  color: #FA7D09;
+}
+.form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 10px 50px;
 }
-
-.clock {
+.form .field {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 40px;
+}
+.form .field .label {
+  color: #2F2519;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19.2px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.form .field input {
+  background-color: #faf4ef;
+  border-radius: 5px;
+  color: #4A3F35;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19.2px;
+  outline: none;
+  padding: 7px 10px;
+}
+.form .field input:focus {
+  color: #FA7D09;
+}
+.form .field small {
+  color: #959595;
+  font-size: 13.6px;
+  margin-top: 5px;
+}
+.form .field .error {
+  color: #FF4301;
+  font-weight: 700;
+}
+.icon {
   align-items: center;
+  fill: #4A3F35;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  margin: 0 10px;
+}
+.icon:hover {
+  fill: #FA7D09;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.spinner {
+  animation: rotation 2s linear infinite;
+  height: 128px;
+  stroke: #2F2519;
+}
+.timer {
+  border: solid 5px #4A3F35;
   border-radius: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 225px;
+  text-align: center;
+  width: 225px;
+}
+.timer .value {
+  color: #4A3F35;
+  font-size: 64px;
+}
+.timer.running {
+  border-color: #FA7D09;
+}
+.timer.running .value {
+  color: #FA7D09;
+}
+
+/* ../../../../../JAIMEL~1.LOP/AppData/Local/Temp/tmp-15652-7gsq5Xu97A8F/pomodoro-timer-styles/layouts.css */
+html,
+body {
+  height: 100%;
   width: 100%;
 }
-
-.clock .text {
-  color: #66DE93;
-  font-size: 100px;
+#__next {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+.container {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 20px 40px;
+  max-width: 800px;
+}
+.container.centered {
+  align-items: center;
+  justify-content: center;
+}
+.emphasis {
+  color: #FA7D09;
+  display: inline;
+  font-weight: 700;
+}
+.footer {
+  background-color: #faf4ef;
+  flex-shrink: 0;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+.footer .wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer .wrapper .feedback,
+.footer .wrapper .social {
+  padding: 20px 20px;
+  padding-bottom: 40px;
+}
+.footer .wrapper .feedback .title,
+.footer .wrapper .social .title {
+  color: #4A3F35;
+  font-family: "Caladea", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.footer .wrapper .feedback .content,
+.footer .wrapper .social .content {
+  color: #4A3F35;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.footer .wrapper .feedback .content .button,
+.footer .wrapper .social .content .button {
+  padding-left: 5px;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+.main {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 20px 40px;
+  max-width: 800px;
+}
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.screen .actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+  order: 10;
+}
+.screen .actions .button {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.screen .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.screen .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.screen .header .title {
+  color: #2F2519;
+  font-family: "Caladea", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.text {
+  padding-bottom: 20px;
 }
 
-.clock.running {
-  border-color: #D83A56;
+/* ../../../../../JAIMEL~1.LOP/AppData/Local/Temp/tmp-15652-7gsq5Xu97A8F/pomodoro-timer-styles/tasks.css */
+.task {
+  border-left: solid 5px #2F2519;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  width: 350px;
+  padding-left: 30px;
 }
-
-.clock.running .text {
-  color: #D83A56;
+.task .actions {
+  justify-content: flex-start;
+  margin-top: 0;
+}
+.task .actions .button {
+  margin: 0;
+  margin-right: 30px;
+}
+.task .content {
+  padding-bottom: 20px;
+}
+.task .content .metas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.task .content .metas .meta {
+  color: #4A3F35;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13.6px;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+.task .content .title {
+  color: #2F2519;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19.2px;
+  font-weight: 700;
+  padding-bottom: 15px;
 }
