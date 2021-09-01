@@ -26,10 +26,15 @@ export default function useNotification() {
             return;
         }
 
-        new Notification(title, {
-            body,
-            icon: './studying.png'
-        });
+        try {
+            new Notification(title, {
+                body,
+                icon: './studying.png'
+            });
+        }
+        catch(err) {
+            alert(err);
+        }
     };
 
     return [state, request, send];
