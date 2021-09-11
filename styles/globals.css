@@ -1,4 +1,4 @@
-/* ../../../../../JAIMEL~1.LOP/AppData/Local/Temp/tmp-15652-7gsq5Xu97A8F/pomodoro-timer-styles/_reset.css */
+/* ../../../../../JAIMEL~1.LOP/AppData/Local/Temp/tmp-1220-hG133N7avzr8/pomodoro-timer-styles/_reset.css */
 * {
   background-color: inherit;
   border: 0;
@@ -14,7 +14,7 @@
   padding: 0;
 }
 
-/* ../../../../../JAIMEL~1.LOP/AppData/Local/Temp/tmp-15652-7gsq5Xu97A8F/pomodoro-timer-styles/actions.css */
+/* ../../../../../JAIMEL~1.LOP/AppData/Local/Temp/tmp-1220-hG133N7avzr8/pomodoro-timer-styles/actions.css */
 .button {
   border: solid 1px #FA7D09;
   border-radius: 5px;
@@ -134,7 +134,7 @@
   color: #FA7D09;
 }
 
-/* ../../../../../JAIMEL~1.LOP/AppData/Local/Temp/tmp-15652-7gsq5Xu97A8F/pomodoro-timer-styles/layouts.css */
+/* ../../../../../JAIMEL~1.LOP/AppData/Local/Temp/tmp-1220-hG133N7avzr8/pomodoro-timer-styles/layouts.css */
 html,
 body {
   height: 100%;
@@ -261,17 +261,23 @@ body {
   padding-bottom: 20px;
 }
 
-/* ../../../../../JAIMEL~1.LOP/AppData/Local/Temp/tmp-15652-7gsq5Xu97A8F/pomodoro-timer-styles/tasks.css */
+/* ../../../../../JAIMEL~1.LOP/AppData/Local/Temp/tmp-1220-hG133N7avzr8/pomodoro-timer-styles/tasks.css */
 .task {
   border-left: solid 5px #2F2519;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-right: 30px;
-  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   width: 350px;
-  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+.task:hover {
+  border-radius: 0 5px 5px 0;
+  box-shadow: 5px 5px 10px 2px #fff4ea;
 }
 .task .actions {
   justify-content: flex-start;
